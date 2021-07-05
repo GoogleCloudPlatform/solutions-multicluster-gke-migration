@@ -148,6 +148,9 @@ if [ ! -e "${GOOGLE_APPLICATION_CREDENTIALS}" ]; then
   exit $ERR_GOOGLE_APPLICATION_CREDENTIALS_NOT_FOUND
 fi
 
+echo "Exporting GOOGLE_APPLICATION_CREDENTIALS variable..."
+export GOOGLE_APPLICATION_CREDENTIALS
+
 create_project_if_necessary "${TERRAFORM_STATE_PROJECT}" "${ORGANIZATION_ID}" "${GOOGLE_CLOUD_BILLING_ACCOUNT_ID}"
 
 TF_STATE_BUCKET_NAME="${TERRAFORM_STATE_PROJECT}-terraform-state"
@@ -201,6 +204,9 @@ fi
 
 echo "Changing the working directory to ${TERRAFORM_ENVIRONMENT_DIR}..."
 cd "${TERRAFORM_ENVIRONMENT_DIR}"
+
+echo "Terraform version:"
+terraform -version
 
 echo "Initializing Terraform..."
 terraform init

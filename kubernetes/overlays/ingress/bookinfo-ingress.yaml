@@ -23,35 +23,35 @@ spec:
   - http:
       paths:
       - path: /productpage
-        pathType: Prefix
+        pathType: ImplementationSpecific
         backend:
           service:
             name: productpage
             port:
               number: 9080
       - path: /static/*
-        pathType: Prefix
+        pathType: ImplementationSpecific
         backend:
           service:
             name: productpage
             port:
               number: 9080
       - path: /login
-        pathType: Prefix
+        pathType: ImplementationSpecific
         backend:
           service:
             name: productpage
             port:
               number: 9080
       - path: /logout
-        pathType: Prefix
+        pathType: ImplementationSpecific
         backend:
           service:
             name: productpage
             port:
               number: 9080
       - path: /api/v1/*
-        pathType: Prefix
+        pathType: ImplementationSpecific
         backend:
           service:
             name: productpage
