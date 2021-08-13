@@ -7,7 +7,7 @@ environment to a multi-cluster GKE environment.
 
 For a detailed explaination, refer to the following documents:
 
-- [Migrating workloads to a multi-cluster GKE environment with Multi-Cluster Services and Multi-Cluster Ingress](https://cloud.google.com/architecture/migrating-workloads-multicluster-gke-mcs-mci)
+- [Migrating workloads to a multi-cluster GKE environment with Multi-Cluster Services and Multi-Cluster Ingress](https://cloud.google.com/architecture/migrating-containers-multi-cluster-gke-ingress-services)
 
 The tutorial guides you through a migration process. During the migration
 process, you provision the environment with [Terraform](https://www.terraform.io/).
