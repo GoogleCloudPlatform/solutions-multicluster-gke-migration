@@ -20,3 +20,6 @@ terraform.tfvars
 
 # Ignore the backend file because it's dynamically generated
 backend.tf
+
+# Ignore log files
+*.log
