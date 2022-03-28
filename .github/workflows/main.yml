@@ -11,6 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+---
 name: CI
 
 on: [push, pull_request]
@@ -24,5 +25,8 @@ jobs:
         uses: github/super-linter@v4.2.2
         env:
           ERROR_ON_MISSING_EXEC_BIT: true
+          KUBERNETES_KUBEVAL_OPTIONS: "--strict --ignore-missing-schemas --schema-location https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/"
           VALIDATE_ALL_CODEBASE: true
+          VALIDATE_JSCPD_ALL_CODEBASE: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+...

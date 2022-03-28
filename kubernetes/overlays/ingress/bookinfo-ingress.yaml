@@ -20,41 +20,41 @@ metadata:
     kubernetes.io/ingress.global-static-ip-name: "example-workload-ingress-global-ip"
 spec:
   rules:
-  - http:
-      paths:
-      - path: /productpage
-        pathType: ImplementationSpecific
-        backend:
-          service:
-            name: productpage
-            port:
-              number: 9080
-      - path: /static/*
-        pathType: ImplementationSpecific
-        backend:
-          service:
-            name: productpage
-            port:
-              number: 9080
-      - path: /login
-        pathType: ImplementationSpecific
-        backend:
-          service:
-            name: productpage
-            port:
-              number: 9080
-      - path: /logout
-        pathType: ImplementationSpecific
-        backend:
-          service:
-            name: productpage
-            port:
-              number: 9080
-      - path: /api/v1/*
-        pathType: ImplementationSpecific
-        backend:
-          service:
-            name: productpage
-            port:
-              number: 9080
+    - http:
+        paths:
+          - path: /productpage
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: productpage
+                port:
+                  number: 9080
+          - path: /static/*
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: productpage
+                port:
+                  number: 9080
+          - path: /login
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: productpage
+                port:
+                  number: 9080
+          - path: /logout
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: productpage
+                port:
+                  number: 9080
+          - path: /api/v1/*
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: productpage
+                port:
+                  number: 9080
 ...
