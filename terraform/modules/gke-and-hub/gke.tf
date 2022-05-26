@@ -14,7 +14,7 @@
 
 module "kubernetes-engine" {
   source  = "terraform-google-modules/kubernetes-engine/google"
-  version = "14.3.0"
+  version = "21.1.0"
 
   name                     = var.gke_cluster_name
   network                  = var.vpc_name
