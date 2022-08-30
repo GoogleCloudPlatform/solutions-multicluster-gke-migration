@@ -54,22 +54,23 @@ provider "registry.terraform.io/hashicorp/google" {
 }
 
 provider "registry.terraform.io/hashicorp/google-beta" {
-  version     = "3.65.0"
-  constraints = "~> 3.65.0"
+  version     = "4.34.0"
+  constraints = "~> 4.34.0"
   hashes = [
-    "h1:+Sme4aLkrInDkZoVUZYTBXuTqv+PGPsf7yHXfNiXQSs=",
-    "h1:m6WJmpTXJy1TptMd7lCv/7BvWvcLZb5l8adFuQE9SPM=",
-    "zh:351b6e1b4a1559422e1909c155ec0cff6db77dba0016c8a3bc60e0e9fcc06b85",
-    "zh:3a3b46ae21cb864442d0d1e434dc83630361f23e5a678265868f93741d255d9c",
-    "zh:5fdc09b133567e5e754607192c5b6e06c36c36c12a7751149d8edd658b06eb13",
-    "zh:b94797baac1f990a7f87995382f05dccb0216f96db768be28012985e0b77c116",
-    "zh:d591bec9b883e412eadddd32fab50ef6f8712734fd0499b24952c7d30141e3bf",
-    "zh:ddb9fed734abcfa03c5550ea6d5e48e18a83a7f720c0b72a4467b2a5f6afd57f",
-    "zh:e2ad58c6b4dc5d13eaf0493ee56cbdff1a544a537d2868f28f4802d431868c66",
-    "zh:e3d0d3e667273051ac995426b2bce429e3a1b53072a229496db4f33c7af0f2bf",
-    "zh:f12e99d90dabe17fb422fd5e745274ca731da004bb2271636fcfa2d779567301",
-    "zh:f8d3d249f283e3c36cffdb3235f192e4de302b21f06fb751d00c6e9f651270f9",
-    "zh:fd368451c44a141a172ef4103338d3da69f870571b960eb29fc0ce9a8fcdadef",
+    "h1:78q4/eS8+mvBofJtNIGQApQ5lvkKrBTO43oYALG7HOI=",
+    "h1:QKhsqT6P79DGsNwrm+/eBTqGxt9rF5SGUSzBw97nyMc=",
+    "zh:2e232665d29ee0f4dc409839decf2cd2c60169272c73d4e502df9eee2adfbaa8",
+    "zh:413a67154ed1834314f9238dd362ba4b96a82edeafddd77e1d8b2ade6338cd37",
+    "zh:45a25afdcd9f037e723952ee4be5bba19db81c19ce420f81d6eca7beb81717fa",
+    "zh:499bd0e8ba44f5728c178a84a60f2edcba4ed9f2feb05519984cd4d1176c2745",
+    "zh:60fb57e0d8f1028f85d424b8d7a5063e90d21b7de507f82fe75a8e89a83e6a24",
+    "zh:657433df22e4f0b195da318acc4e070e0c39b57f3e559604a38e36d9d3382680",
+    "zh:a0264652051c697d5b579881dd7e75b7612a221112547a615e76ede910c9023b",
+    "zh:da8d983a0ae11efe578ae77082edc34ac143a24237eb9aa816225d0e4820fafa",
+    "zh:e0c5c7b45f9277196f90a24dc3663939ed608334422750a3c47d2b4c32d4ce56",
+    "zh:e50db07cea91be8132a1b4132af7f464801704992556ad1bdc4233db1ab82205",
+    "zh:ea94b608719f4a73e3091742fb6c4cf5cd8c5cfb329a08ecafc068f933417d2d",
+    "zh:f569b65999264a9416862bca5cd2a6177d94ccb0424f3a4ef424428912b9cb3c",
   ]
 }
 
