@@ -18,15 +18,28 @@ on: [push, pull_request]
 
 jobs:
   lint:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Super-Linter
-        uses: github/super-linter@v4.9.6
+        uses: github/super-linter@v4.10.0
         env:
           ERROR_ON_MISSING_EXEC_BIT: true
           VALIDATE_ALL_CODEBASE: true
           # Disable Kubeval because it gets confused by Kustomize resources
           VALIDATE_KUBERNETES_KUBEVAL: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  terraform:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+      - name: Terraform Init
+        working-directory: terraform
+        run: terraform init
+      - name: Terraform validate
+        working-directory: terraform
+        run: terraform validate
 ...
