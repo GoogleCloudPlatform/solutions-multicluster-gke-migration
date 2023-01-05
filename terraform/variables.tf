@@ -42,8 +42,3 @@ variable "google_organization_id" {
   description = "The default organization ID for Google Cloud projects."
   type        = string
 }
-
-variable "terraform_environment_name" {
-  description = "Name of the current environment."
-  type        = string
-}

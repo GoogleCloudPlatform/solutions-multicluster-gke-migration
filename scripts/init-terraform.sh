@@ -197,7 +197,6 @@ google_default_project_id         = "${GOOGLE_CLOUD_DEFAULT_PROJECT}"
 google_default_region             = "${GOOGLE_CLOUD_DEFAULT_REGION}"
 google_default_zone               = "${GOOGLE_CLOUD_DEFAULT_ZONE}"
 google_organization_id            = "${ORGANIZATION_ID}"
-terraform_environment_name        = "${TERRAFORM_ENVIRONMENT_NAME}"
 EOF
 fi
 
