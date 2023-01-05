@@ -17,8 +17,6 @@ provider "google" {
   zone   = var.google_default_zone
 }
 
-data "google_client_config" "default" {}
-
 data "google_organization" "main_organization" {
   organization = var.google_organization_id
 }

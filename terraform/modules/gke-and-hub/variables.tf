@@ -12,16 +12,40 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-variable "auto_repair" {}
-variable "auto_upgrade" {}
-variable "gke_cluster_name" {}
+variable "auto_repair" {
+  type = bool
+}
+variable "auto_upgrade" {
+  type = bool
+}
+variable "gke_cluster_name" {
+  type = string
+}
 variable "gke_cluster_node_pool_size" {}
-variable "machine_type" {}
-variable "pods_ip_range_name" {}
-variable "project_id" {}
-variable "region" {}
-variable "release_channel" {}
-variable "remove_default_node_pool" {}
-variable "services_ip_range_name" {}
-variable "subnetwork_name" {}
-variable "vpc_name" {}
+variable "machine_type" {
+  type = string
+}
+variable "pods_ip_range_name" {
+  type = string
+}
+variable "project_id" {
+  type = string
+}
+variable "region" {
+  type = string
+}
+variable "release_channel" {
+  type = string
+}
+variable "remove_default_node_pool" {
+  type = bool
+}
+variable "services_ip_range_name" {
+  type = string
+}
+variable "subnetwork_name" {
+  type = string
+}
+variable "vpc_name" {
+  type = string
+}
