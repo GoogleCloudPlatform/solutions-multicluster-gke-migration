@@ -21,7 +21,9 @@ variable "auto_upgrade" {
 variable "gke_cluster_name" {
   type = string
 }
-variable "gke_cluster_node_pool_size" {}
+variable "gke_cluster_node_pool_size" {
+  type = number
+}
 variable "machine_type" {
   type = string
 }
