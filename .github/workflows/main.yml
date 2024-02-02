@@ -21,10 +21,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Super-Linter
         uses: super-linter/super-linter@v6.0.0
         env:
-          ERROR_ON_MISSING_EXEC_BIT: true
           VALIDATE_ALL_CODEBASE: true
           # Disable Kubeconform because it gets confused by Kustomize resources
           VALIDATE_KUBERNETES_KUBECONFORM: false
